@@ -2,35 +2,35 @@ import { Card, List, ListItem, Title } from "@tremor/react";
 
 const cities = [
   {
-    city: "Athens",
-    rating: "2 open PR",
+    city: "Продажи",
+    rating: "33 370 ₽",
   },
   {
-    city: "Luzern",
-    rating: "1 open PR",
+    city: "Сопровождение",
+    rating: "13 491 ₽",
   },
   {
-    city: "Zürich",
-    rating: "0 open PR",
+    city: "Реализация",
+    rating: "4 744 ₽",
   },
   {
-    city: "Vienna",
-    rating: "1 open PR",
+    city: "Эксп. продажи",
+    rating: "1 521 ₽",
   },
   {
-    city: "Ermatingen",
-    rating: "0 open PR",
+    city: "Развитие",
+    rating: "1 020 ₽",
   },
   {
-    city: "Lisbon",
-    rating: "0 open PR",
+    city: "Реклама",
+    rating: "759 ₽",
   },
 ];
 
 const ScoreList = () => {
   return (
     <Card className="max-w-full">
-      <Title>Tremor Hometown</Title>
+      <Title>Загрузка отделов</Title>
       <List>
         {cities.map((item) => (
           <ListItem key={item.city}>

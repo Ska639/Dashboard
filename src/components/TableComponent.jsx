@@ -14,47 +14,38 @@ import {
 
 const data = [
   {
-    name: "Кобяков Антон Анатольевич",
-    Role: "Помощник Президента РФ",
-    departement:
-      "Советник по вопросам внешней политики и международных отношений",
+    name: "Кобяков Алексей Анатольевич",
+    Role: "Исп. Директор",
     status: "Действующий",
   },
   {
-    name: "Левицкая Александра Юрьевна",
-    Role: "Помощник Президента РФ",
-    departement: "Советник по вопросам экономического и социального развития",
+    name: "Нагорная Александра Юрьевна",
+    Role: "Звм. директора",
     status: "Действующий",
   },
   {
-    name: "Толстой Владимир Ильич",
-    Role: "Помощник Президента РФ",
-    departement: "Советник по вопросам культуры и искусства",
+    name: "Ходынов Владимир Ильич",
+    Role: "HR директор",
     status: "Действующий",
   },
   {
-    name: "Фадеев Валерий Александрович",
-    Role: "Помощник Президента РФ",
-    departement:
-      "Советник по развитию институтов гражданского общества и правам человека",
+    name: "Евстафьев Валерий Александрович",
+    Role: "Начальник отдела продаж",
     status: "Действующий",
   },
   {
     name: "Эдельгериев Руслан Сайд-Хусайнович",
-    Role: "Помощник Президента РФ",
-    departement: "Советник по вопросам изменения климата",
+    Role: "Пресс-атташе",
     status: "Действующий",
   },
   {
-    name: "Воронцов Юлий Михайлович",
-    Role: "Помощник Президента РФ",
-    departement: "Советник по вопросам внешней политики",
+    name: "Воронцов Кирилл Михайлович",
+    Role: "Начальник развития",
     status: "Действующий",
   },
   {
     name: "Малышев Николай Григорьевич",
-    Role: "Помощник Президента РФ",
-    departement: "Советник по вопросам науки и высшей школы",
+    Role: "SMM-менеджер",
     status: "Действующий",
   },
 ];
@@ -67,8 +58,7 @@ const TableComponent = () => {
         <TableHead>
           <TableRow>
             <TableHeaderCell>Ф.И.О.</TableHeaderCell>
-            <TableHeaderCell>Положение</TableHeaderCell>
-            <TableHeaderCell>Отдел</TableHeaderCell>
+            <TableHeaderCell>Должность</TableHeaderCell>
             <TableHeaderCell>Статус</TableHeaderCell>
           </TableRow>
         </TableHead>
@@ -78,9 +68,6 @@ const TableComponent = () => {
               <TableCell>{item.name}</TableCell>
               <TableCell>
                 <Text>{item.Role}</Text>
-              </TableCell>
-              <TableCell>
-                <Text>{item.departement}</Text>
               </TableCell>
               <TableCell>
                 <Badge color="emerald" icon={StatusOnlineIcon}>

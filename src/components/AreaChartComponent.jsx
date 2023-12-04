@@ -3,33 +3,33 @@ import { AreaChart, Card, Title } from "@tremor/react";
 const chartdata = [
   {
     дата: "Январь 22",
-    ЭкономАнализ: 2890,
-    "Medical Visual Systems": 2338,
+    План: 2890,
+    Факт: 2338,
   },
   {
     дата: "Февраль 22",
-    ЭкономАнализ: 2756,
-    "Medical Visual Systems": 2103,
+    План: 2756,
+    Факт: 2103,
   },
   {
     дата: "Март 22",
-    ЭкономАнализ: 3322,
-    "Medical Visual Systems": 2194,
+    План: 3322,
+    Факт: 2194,
   },
   {
     дата: "Апрель 22",
-    ЭкономАнализ: 3470,
-    "Medical Visual Systems": 2108,
+    План: 3470,
+    Факт: 2108,
   },
   {
     дата: "Май 22",
-    ЭкономАнализ: 3475,
-    "Medical Visual Systems": 1812,
+    План: 3475,
+    Факт: 1812,
   },
   {
     дата: "Июнь 22",
-    ЭкономАнализ: 3129,
-    "Medical Visual Systems": 1726,
+    План: 3129,
+    Факт: 1726,
   },
 ];
 
@@ -44,7 +44,7 @@ const AreaChartComponent = () => {
         className="h-72 mt-4"
         data={chartdata}
         index="date"
-        categories={["ЭкономАнализ", "Medical Visual Systems"]}
+        categories={["План", "Факт"]}
         colors={["indigo", "cyan"]}
         valueFormatter={valueFormatter}
         showAnimation={true}
