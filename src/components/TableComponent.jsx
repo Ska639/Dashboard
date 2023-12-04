@@ -53,7 +53,7 @@ const data = [
 const TableComponent = () => {
   return (
     <Card className="mt-2">
-      <Title>Список федеральных советников Российской Федерации</Title>
+      <Title>Список сотрудников</Title>
       <Table className="mt-5">
         <TableHead>
           <TableRow>
