@@ -61,9 +61,14 @@ const dataFormatter = (number) => {
 
 const SalesItem = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const rub = 35555;
+  const [variable, setVariable] = useState(rub);
+  const handleClickCard = () => {
+    setVariable(variable + 50);
+  };
 
   return (
-    <Card className="max-w-full mx-auto">
+    <Card className="max-w-full mx-auto" onClick={handleClickCard}>
       <Flex className="space-x-0 flex-col lg:flex-row">
         <Title>Анализ</Title>
         <TabGroup index={selectedIndex} onIndexChange={setSelectedIndex}>
@@ -74,7 +79,7 @@ const SalesItem = () => {
         </TabGroup>
       </Flex>
       <Text className="mt-8">Стоимость портфеля</Text>
-      <Metric>₽ 35.458</Metric>
+      <Metric>{variable} ₽</Metric>
       <Divider />
       <Text className="mt-8">
         <Bold>Распределение активов</Bold>

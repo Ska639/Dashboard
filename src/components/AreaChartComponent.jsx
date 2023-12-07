@@ -3,7 +3,7 @@ import { AreaChart, Card, Title } from "@tremor/react";
 const chartdata = [
   {
     дата: "Январь 22",
-    План: 2890,
+    План: 3200,
     Факт: 2338,
   },
   {
